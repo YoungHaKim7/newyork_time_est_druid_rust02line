@@ -9,7 +9,8 @@
 ```
 
 
-![02](https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/d7d0a280-233c-42ab-b5d9-49051d9db959)
+![02](https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/c16924c9-d20c-426b-8bc6-6f54f353e753)
+
 
 # Result
 
