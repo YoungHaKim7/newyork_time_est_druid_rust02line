@@ -50,7 +50,7 @@ impl<W: Widget<TimeState>> Controller<TimeState, W> for TimeController {
 
 fn build_root_widget() -> impl Widget<TimeState> {
     let display = Label::new(|data: &String, _env: &_| data.clone())
-        .with_text_size(20.0)
+        .with_text_size(16.0)
         .lens(TimeState::time)
         .padding(5.0);
 
@@ -78,7 +78,7 @@ pub fn main() {
     // describe the main window
     let main_window = WindowDesc::new(build_root_widget())
         .title("NewYork_Time: EST!")
-        .window_size((196.0, 110.0))
+        .window_size((160.0, 90.0))
         .resizable(false);
 
     // create the initial app state
