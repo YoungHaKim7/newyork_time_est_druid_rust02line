@@ -1,5 +1,34 @@
 # newyork_time_est_druid_rust02line
 
+- My Settings
+
+```rust
+        child.event(ctx, event, data, env);
+        ctx.window().set_always_on_top(true);
+        ctx.window().show_titlebar(false);
+        ctx.window().handle_titlebar(true);
+        ctx.window().set_position((1760., 0.0));
+
+..//
+fn build_root_widget() -> impl Widget<TimeState> {
+    let display = Label::new(|data: &String, _env: &_| data.clone())
+        .with_text_size(16.0)
+        .lens(TimeState::time)
+        .padding(5.0);
+
+
+..//
+
+pub fn main() {
+    // describe the main window
+    let main_window = WindowDesc::new(build_root_widget())
+        .title("NewYork_Time: EST!")
+        .window_size((160.0, 90.0))
+        .resizable(false);
+
+
+```
+
 # Update(230808)
 
 ```rust
