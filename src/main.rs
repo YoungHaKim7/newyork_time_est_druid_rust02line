@@ -44,6 +44,7 @@ impl<W: Widget<TimeState>> Controller<TimeState, W> for TimeController {
         child.event(ctx, event, data, env);
         ctx.window().set_always_on_top(true);
         ctx.window().show_titlebar(false);
+        ctx.window().handle_titlebar(true);
     }
 }
 
@@ -77,7 +78,7 @@ pub fn main() {
     // describe the main window
     let main_window = WindowDesc::new(build_root_widget())
         .title("NewYork_Time: EST!")
-        .window_size((255.0, 152.0))
+        .window_size((255.0, 122.0))
         .resizable(false);
 
     // create the initial app state
