@@ -78,7 +78,7 @@ pub fn main() {
     // describe the main window
     let main_window = WindowDesc::new(build_root_widget())
         .title("NewYork_Time: EST!")
-        .window_size((205.0, 110.0))
+        .window_size((196.0, 110.0))
         .resizable(false);
 
     // create the initial app state
